@@ -31,7 +31,7 @@ CPU Scheduler is part of operating system that allocates CPU resources to proces
 4. Ready : process is waiting for CPU to be allocated
 5. Terminated : CPU execution is finished.
 
-![](pic_folder/process_state_diagram.JPG)
+![](pic_folder/process_state_diagram.jpg)
 
 After creation of processes, they are at ready state before allocation of CPU and after allocation, it changes its state to running. When events such as I/O takes place, it changes its state to waiting. Thus, these processes usually wait at ready queue or waiting queue when they are in ready or running state. **CPU Scheduling** schedules the sequence of these proecesses in single process environment to avoid conflict and this is where **Scheduling algorithm** comes to play to effectively schedule the sequences.
 
@@ -51,18 +51,18 @@ time slices (also known as time quanta) are assigned to each process in equal po
 &nbsp;
 ## Structure
 Below is a system structure and flow of modules.
-![](pic_folder/structure.JPG)
+![](pic_folder/structure.jpg)
 
 &nbsp;
 
 **FCFS_Schedule(readyQueue, waitingQueue, finishedQueue, process_array[])**
-![](pic_folder/fcfs.JPG)
+![](pic_folder/fcfs.jpg)
 
 **NSJF_Schedule(readyQueue, waitingQueue, finishedQueue, process_array[], preemptive)**
-![](pic_folder/nsjf.JPG)
+![](pic_folder/nsjf.jpg)
 
 **pp_Schedule(readyQueue, waitingQueue, finishedQueue, process_array[], preemptive)**
-![](pic_folder/pp.JPG)
+![](pic_folder/pp.jpg)
 
 **RR_Schedule(readyQueue, waitingQueue, finishedQueue, process_array[], TIME_QUANTUM)**
 ![](pic_folder/rr.JPG)
